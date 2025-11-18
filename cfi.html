@@ -1,0 +1,1405 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Teak Outdoor Furniture</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      color: #2a2a2a;
+      background: #fdfcfb;
+      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(253, 252, 251, 0.98);
+      backdrop-filter: blur(20px);
+      padding: 2rem 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 300;
+      letter-spacing: 4px;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .logo::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background: #c9a876;
+    }
+
+    nav {
+      display: flex;
+      gap: 3rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5a5a5a;
+      font-size: 0.95rem;
+      transition: all 0.4s ease;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      position: relative;
+      font-family: 'Lato', sans-serif;
+    }
+
+    nav a::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 1px;
+      background: #c9a876;
+      transition: width 0.4s ease;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #8b4513;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100%;
+      min-height: 750px;
+      background: linear-gradient(135deg, #e6d5bd 0%, #c9a876 50%, #a67c52 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10rem 8% 6rem;
+      margin-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(139, 69, 19, 0.1) 0%, transparent 50%);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to top, rgba(253, 252, 251, 0.3), transparent);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 950px;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero h1 {
+      font-size: 5.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      letter-spacing: 3px;
+      line-height: 1.15;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 3rem;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      background: rgba(255, 255, 255, 0.95);
+      color: #8b4513;
+      padding: 1.3rem 3.5rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-radius: 0;
+      display: inline-block;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: 2px solid transparent;
+      font-family: 'Lato', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #8b4513;
+      transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: -1;
+    }
+
+    .cta-button:hover::before {
+      left: 0;
+    }
+
+    .cta-button:hover {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* About Section */
+    .about {
+      padding: 8rem 8%;
+      background: #fdfcfb;
+      position: relative;
+    }
+
+    .about::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 200px;
+      background: linear-gradient(to bottom, transparent, #c9a876, transparent);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .about-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: 3.5rem;
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      line-height: 1.3;
+      position: relative;
+      display: inline-block;
+    }
+
+    .about h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: #c9a876;
+    }
+
+    .about p {
+      font-size: 1.15rem;
+      line-height: 2;
+      color: #5a5a5a;
+      margin-bottom: 1.8rem;
+      font-weight: 300;
+    }
+
+    .about-image {
+      background: linear-gradient(135deg, #e6d5bd 0%, #c9a876 50%, #a67c52 100%);
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 
+        20px 20px 60px rgba(0, 0, 0, 0.1),
+        -20px -20px 60px rgba(255, 255, 255, 0.5);
+    }
+
+    .about-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 255, 0.1) 75%);
+      background-size: 40px 40px;
+      opacity: 0.3;
+    }
+
+    .wood-texture {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 3rem;
+    }
+
+    .wood-grain {
+      width: 100%;
+      height: 12%;
+      background: linear-gradient(90deg, 
+        rgba(139, 69, 19, 0.25) 0%, 
+        rgba(160, 82, 45, 0.15) 30%,
+        rgba(201, 168, 118, 0.2) 50%, 
+        rgba(160, 82, 45, 0.15) 70%,
+        rgba(139, 69, 19, 0.25) 100%);
+      border-radius: 30px;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Features Grid */
+    .features {
+      padding: 8rem 8%;
+      background: #fdfcfb;
+      position: relative;
+    }
+
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: 80%;
+      border: 1px solid rgba(201, 168, 118, 0.1);
+      pointer-events: none;
+    }
+
+    .features-grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(201, 168, 118, 0.2);
+      position: relative;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(201, 168, 118, 0.05) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 60px rgba(139, 69, 19, 0.15);
+      border-color: rgba(201, 168, 118, 0.4);
+    }
+
+    .feature-icon {
+      font-size: 4.5rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      transition: transform 0.5s ease;
+    }
+
+    .feature-card:hover .feature-icon {
+      transform: scale(1.1);
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      color: #1a1a1a;
+      margin-bottom: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .feature-card p {
+      font-size: 1.05rem;
+      color: #6a6a6a;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    /* Collection Section */
+    .collection {
+      padding: 8rem 8%;
+      background: #fdfcfb;
+      position: relative;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 3.5rem;
+      color: #1a1a1a;
+      margin-bottom: 5rem;
+      font-weight: 300;
+      letter-spacing: 3px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 2px;
+      background: #c9a876;
+    }
+
+    .collection-grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 3rem;
+    }
+
+    .collection-item {
+      background: #ffffff;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: 1px solid rgba(201, 168, 118, 0.15);
+      position: relative;
+    }
+
+    .collection-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px solid #c9a876;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .collection-item:hover::before {
+      opacity: 1;
+    }
+
+    .collection-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 70px rgba(139, 69, 19, 0.2);
+    }
+
+    .collection-image {
+      height: 350px;
+      background: linear-gradient(135deg, #e6d5bd 0%, #c9a876 50%, #a67c52 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .collection-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.1));
+    }
+
+    .collection-info {
+      padding: 2.5rem;
+      background: #ffffff;
+    }
+
+    .collection-info h3 {
+      font-size: 1.7rem;
+      color: #1a1a1a;
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .collection-info p {
+      font-size: 1.05rem;
+      color: #6a6a6a;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Production Section */
+    .production {
+      padding: 8rem 8%;
+      background: linear-gradient(to bottom, #fdfcfb 0%, #f5f3f0 100%);
+      position: relative;
+    }
+
+    .production-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .production-content h3 {
+      font-size: 2.5rem;
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .production-content h3::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: #c9a876;
+    }
+
+    .production-content p {
+      font-size: 1.15rem;
+      line-height: 2;
+      color: #5a5a5a;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+
+    .production-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(201, 168, 118, 0.2);
+      transition: all 0.4s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+      border-color: rgba(201, 168, 118, 0.5);
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      color: #8b4513;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      color: #5a5a5a;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+    }
+
+    .production-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .gallery-main {
+      background: linear-gradient(135deg, #e6d5bd 0%, #c9a876 50%, #a67c52 100%);
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(201, 168, 118, 0.3);
+    }
+
+    .gallery-main::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    }
+
+    .workshop-visual {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .workshop-icon {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .workshop-label {
+      font-size: 1.3rem;
+      color: #ffffff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 300;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      background: #ffffff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border: 1px solid rgba(201, 168, 118, 0.2);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      border-color: rgba(201, 168, 118, 0.5);
+      box-shadow: 0 10px 30px rgba(139, 69, 19, 0.15);
+    }
+
+    .gallery-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-text {
+      font-size: 0.95rem;
+      color: #5a5a5a;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 8rem 8%;
+      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(201, 168, 118, 0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: moveBackground 60s linear infinite;
+    }
+
+    @keyframes moveBackground {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(50px, 50px);
+      }
+    }
+
+    .contact h2 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      letter-spacing: 3px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 300;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-item {
+      font-size: 1.15rem;
+      color: #c9a876;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact-item:hover {
+      color: #e6d5bd;
+      border-bottom-color: #c9a876;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f0f0f;
+      color: #888;
+      text-align: center;
+      padding: 2.5rem 8%;
+      font-size: 0.95rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      border-top: 1px solid rgba(201, 168, 118, 0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      header {
+        padding: 1.5rem 5%;
+      }
+
+      .logo {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+      }
+
+      nav {
+        gap: 2rem;
+      }
+
+      nav a {
+        font-size: 0.85rem;
+      }
+
+      .hero {
+        padding: 8rem 5% 4rem;
+        min-height: 600px;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .cta-button {
+        padding: 1.1rem 2.8rem;
+        font-size: 0.9rem;
+      }
+
+      .about {
+        padding: 6rem 5%;
+      }
+
+      .about-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+
+      .about h2 {
+        font-size: 2.8rem;
+      }
+
+      .about-image {
+        height: 400px;
+      }
+
+      .features {
+        padding: 6rem 5%;
+      }
+
+      .features-grid {
+        gap: 3rem;
+      }
+
+      .collection {
+        padding: 6rem 5%;
+      }
+
+      .section-title {
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+      }
+
+      .collection-grid {
+        gap: 2.5rem;
+      }
+
+      .contact {
+        padding: 6rem 5%;
+      }
+
+      .contact h2 {
+        font-size: 2.8rem;
+      }
+
+      .contact-info {
+        gap: 2.5rem;
+      }
+
+      .production {
+        padding: 6rem 5%;
+      }
+
+      .production-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+      }
+
+      .production-content h3 {
+        font-size: 2.2rem;
+      }
+
+      .production-stats {
+        gap: 1.5rem;
+      }
+
+      .gallery-main {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .logo {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+      }
+
+      nav {
+        gap: 1.2rem;
+      }
+
+      nav a {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+      }
+
+      .cta-button {
+        padding: 1rem 2.5rem;
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+      }
+
+      .about h2 {
+        font-size: 2.2rem;
+      }
+
+      .about p {
+        font-size: 1.05rem;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+      }
+
+      .feature-card {
+        padding: 3rem 2rem;
+      }
+
+      .feature-card h3 {
+        font-size: 1.4rem;
+      }
+
+      .collection-image {
+        height: 280px;
+        font-size: 4rem;
+      }
+
+      .contact h2 {
+        font-size: 2.2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .production-content h3 {
+        font-size: 1.9rem;
+      }
+
+      .production-content p {
+        font-size: 1.05rem;
+      }
+
+      .production-stats {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+      }
+
+      .gallery-main {
+        height: 250px;
+      }
+
+      .workshop-icon {
+        font-size: 4.5rem;
+      }
+
+      .workshop-label {
+        font-size: 1.1rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <header>
+   <div class="logo" id="brand-name">
+    TEAK LEGACY
+   </div>
+   <nav><a href="#home">Home</a> <a href="#about">About</a> <a href="#collection">Collection</a> <a href="#contact">Contact</a>
+   </nav>
+  </header>
+  <section class="hero" id="home">
+   <div class="hero-content">
+    <h1 id="hero-title">Timeless Outdoor Elegance</h1>
+    <p id="hero-subtitle">Handcrafted teak furniture that transforms your outdoor spaces into luxury sanctuaries</p><a href="#collection" class="cta-button" id="cta-button">Explore Collection</a>
+   </div>
+  </section>
+  <section class="about" id="about">
+   <div class="about-container">
+    <div>
+     <h2 id="about-title">Master Craftsmanship</h2>
+     <p id="about-description">Each piece is meticulously handcrafted from sustainably sourced Grade A teak wood, renowned for its exceptional durability and natural resistance to the elements. Our artisans combine centuries-old techniques with contemporary design to create furniture that ages beautifully and lasts generations.</p>
+     <p>Experience the perfect blend of luxury, functionality, and environmental consciousness in every piece we create.</p>
+    </div>
+    <div class="about-image">
+     <div class="wood-texture">
+      <div class="wood-grain"></div>
+      <div class="wood-grain"></div>
+      <div class="wood-grain"></div>
+      <div class="wood-grain"></div>
+      <div class="wood-grain"></div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="features">
+   <div class="features-grid">
+    <div class="feature-card">
+     <div class="feature-icon">
+      🌳
+     </div>
+     <h3>Premium Grade A Teak</h3>
+     <p>Only the finest sustainably harvested teak wood, naturally resistant to weather, insects, and decay</p>
+    </div>
+    <div class="feature-card">
+     <div class="feature-icon">
+      ✨
+     </div>
+     <h3>Handcrafted Excellence</h3>
+     <p>Each piece is individually crafted by master artisans with decades of woodworking experience</p>
+    </div>
+    <div class="feature-card">
+     <div class="feature-icon">
+      🛡️
+     </div>
+     <h3>Lifetime Quality</h3>
+     <p>Built to last generations with minimal maintenance, developing a beautiful silver patina over time</p>
+    </div>
+   </div>
+  </section>
+  <section class="collection" id="collection">
+   <h2 class="section-title">Our Signature Collection</h2>
+   <div class="collection-grid">
+    <div class="collection-item">
+     <div class="collection-image">
+      🪑
+     </div>
+     <div class="collection-info">
+      <h3>Dining Sets</h3>
+      <p>Elegant tables and chairs perfect for outdoor entertaining</p>
+     </div>
+    </div>
+    <div class="collection-item">
+     <div class="collection-image">
+      🛋️
+     </div>
+     <div class="collection-info">
+      <h3>Lounge Seating</h3>
+      <p>Luxurious sofas and sectionals for ultimate relaxation</p>
+     </div>
+    </div>
+    <div class="collection-item">
+     <div class="collection-image">
+      🏖️
+     </div>
+     <div class="collection-info">
+      <h3>Chaise Lounges</h3>
+      <p>Resort-style comfort for poolside sophistication</p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="production" id="production">
+   <h2 class="section-title">Where Artistry Meets Craft</h2>
+   <div class="production-container">
+    <div class="production-content">
+     <h3 id="production-title">Our Artisan Workshop</h3>
+     <p id="production-description">Step into our sun-lit workshop where skilled artisans breathe life into premium teak wood. Each day, master craftsmen apply traditional joinery techniques passed down through generations, ensuring every joint is perfect and every curve flows naturally.</p>
+     <div class="production-stats">
+      <div class="stat-item">
+       <div class="stat-number">
+        30+
+       </div>
+       <div class="stat-label">
+        Master Artisans
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-number">
+        50
+       </div>
+       <div class="stat-label">
+        Years Experience
+       </div>
+      </div>
+      <div class="stat-item">
+       <div class="stat-number">
+        100%
+       </div>
+       <div class="stat-label">
+        Handcrafted
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="production-gallery">
+     <div class="gallery-main">
+      <div class="workshop-visual">
+       <div class="workshop-icon">
+        🔨
+       </div>
+       <div class="workshop-label">
+        Traditional Tools
+       </div>
+      </div>
+     </div>
+     <div class="gallery-grid">
+      <div class="gallery-item">
+       <div class="gallery-icon">
+        🪵
+       </div>
+       <div class="gallery-text">
+        Premium Wood Selection
+       </div>
+      </div>
+      <div class="gallery-item">
+       <div class="gallery-icon">
+        ✋
+       </div>
+       <div class="gallery-text">
+        Hand Finishing
+       </div>
+      </div>
+      <div class="gallery-item">
+       <div class="gallery-icon">
+        📐
+       </div>
+       <div class="gallery-text">
+        Precision Joinery
+       </div>
+      </div>
+      <div class="gallery-item">
+       <div class="gallery-icon">
+        🎨
+       </div>
+       <div class="gallery-text">
+        Natural Oil Treatment
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="contact" id="contact">
+   <h2 id="contact-title">Begin Your Journey</h2>
+   <p>Transform your outdoor living space with timeless teak furniture</p>
+   <div class="contact-info">
+    <div class="contact-item">
+     📧 info@teaklegacy.com
+    </div>
+    <div class="contact-item">
+     📞 +1 (555) 123-4567
+    </div>
+    <div class="contact-item">
+     📍 Showroom Visits by Appointment
+    </div>
+   </div>
+  </section>
+  <footer>
+   <p id="copyright-text">© 2024 Teak Legacy. All rights reserved. Sustainable luxury furniture.</p>
+  </footer>
+  <script>
+    const defaultConfig = {
+      brand_name: "TEAK LEGACY",
+      hero_title: "Timeless Outdoor Elegance",
+      hero_subtitle: "Handcrafted teak furniture that transforms your outdoor spaces into luxury sanctuaries",
+      cta_button: "Explore Collection",
+      about_title: "Master Craftsmanship",
+      about_description: "Each piece is meticulously handcrafted from sustainably sourced Grade A teak wood, renowned for its exceptional durability and natural resistance to the elements. Our artisans combine centuries-old techniques with contemporary design to create furniture that ages beautifully and lasts generations.",
+      production_title: "Our Artisan Workshop",
+      production_description: "Step into our sun-lit workshop where skilled artisans breathe life into premium teak wood. Each day, master craftsmen apply traditional joinery techniques passed down through generations, ensuring every joint is perfect and every curve flows naturally.",
+      contact_title: "Begin Your Journey",
+      copyright_text: "© 2024 Teak Legacy. All rights reserved. Sustainable luxury furniture.",
+      background_color: "#f8f6f3",
+      surface_color: "#ffffff",
+      text_color: "#2c2c2c",
+      primary_action_color: "#8b4513",
+      secondary_action_color: "#d4a574",
+      font_family: "Georgia",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'serif';
+      const baseSize = config.font_size || defaultConfig.font_size;
+
+      // Apply font family
+      document.body.style.fontFamily = `'${customFont}', ${baseFontStack}`;
+
+      // Apply colors
+      document.body.style.background = config.background_color || defaultConfig.background_color;
+      document.body.style.color = config.text_color || defaultConfig.text_color;
+
+      // Update all white backgrounds
+      const whiteElements = document.querySelectorAll('.about, .collection, header, .feature-card');
+      whiteElements.forEach(el => {
+        el.style.background = config.surface_color || defaultConfig.surface_color;
+      });
+
+      // Update background colored sections
+      const bgElements = document.querySelectorAll('.features');
+      bgElements.forEach(el => {
+        el.style.background = config.background_color || defaultConfig.background_color;
+      });
+
+      // Update primary action color (buttons, hovers)
+      const ctaButton = document.querySelector('.cta-button');
+      ctaButton.style.color = config.primary_action_color || defaultConfig.primary_action_color;
+
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          link.style.color = config.primary_action_color || defaultConfig.primary_action_color;
+        });
+        link.addEventListener('mouseleave', () => {
+          link.style.color = config.text_color || defaultConfig.text_color;
+        });
+      });
+
+      ctaButton.addEventListener('mouseenter', () => {
+        ctaButton.style.background = config.primary_action_color || defaultConfig.primary_action_color;
+        ctaButton.style.color = config.surface_color || defaultConfig.surface_color;
+      });
+      ctaButton.addEventListener('mouseleave', () => {
+        ctaButton.style.background = config.surface_color || defaultConfig.surface_color;
+        ctaButton.style.color = config.primary_action_color || defaultConfig.primary_action_color;
+      });
+
+      // Update hero gradient with secondary action color
+      const hero = document.querySelector('.hero');
+      hero.style.background = `linear-gradient(135deg, ${config.secondary_action_color || defaultConfig.secondary_action_color} 0%, ${config.primary_action_color || defaultConfig.primary_action_color} 100%)`;
+
+      const aboutImage = document.querySelector('.about-image');
+      aboutImage.style.background = `linear-gradient(135deg, ${config.secondary_action_color || defaultConfig.secondary_action_color} 0%, ${config.primary_action_color || defaultConfig.primary_action_color} 100%)`;
+
+      const collectionImages = document.querySelectorAll('.collection-image');
+      collectionImages.forEach(img => {
+        img.style.background = `linear-gradient(135deg, ${config.secondary_action_color || defaultConfig.secondary_action_color} 0%, ${config.primary_action_color || defaultConfig.primary_action_color} 100%)`;
+      });
+
+      // Apply font sizes
+      document.querySelector('.hero h1').style.fontSize = `${baseSize * 2.8}px`;
+      document.querySelector('.hero p').style.fontSize = `${baseSize * 0.94}px`;
+      document.querySelector('.cta-button').style.fontSize = `${baseSize * 0.69}px`;
+      
+      document.querySelectorAll('.about h2, .section-title, .contact h2').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.88}px`;
+      });
+      
+      document.querySelectorAll('.about p').forEach(el => {
+        el.style.fontSize = `${baseSize * 0.75}px`;
+      });
+
+      document.querySelectorAll('.feature-card h3').forEach(el => {
+        el.style.fontSize = `${baseSize * 1}px`;
+      });
+
+      document.querySelectorAll('.feature-card p, .collection-info p').forEach(el => {
+        el.style.fontSize = `${baseSize * 0.69}px`;
+      });
+
+      document.querySelectorAll('.collection-info h3').forEach(el => {
+        el.style.fontSize = `${baseSize * 1.13}px`;
+      });
+
+      document.querySelector('.logo').style.fontSize = `${baseSize * 1.13}px`;
+      document.querySelectorAll('nav a').forEach(el => {
+        el.style.fontSize = `${baseSize * 0.63}px`;
+      });
+
+      // Update text content
+      document.getElementById('brand-name').textContent = config.brand_name || defaultConfig.brand_name;
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('cta-button').textContent = config.cta_button || defaultConfig.cta_button;
+      document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+      document.getElementById('about-description').textContent = config.about_description || defaultConfig.about_description;
+      document.getElementById('production-title').textContent = config.production_title || defaultConfig.production_title;
+      document.getElementById('production-description').textContent = config.production_description || defaultConfig.production_description;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      document.getElementById('copyright-text').textContent = config.copyright_text || defaultConfig.copyright_text;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ primary_action_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ secondary_action_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["brand_name", config.brand_name || defaultConfig.brand_name],
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["cta_button", config.cta_button || defaultConfig.cta_button],
+        ["about_title", config.about_title || defaultConfig.about_title],
+        ["about_description", config.about_description || defaultConfig.about_description],
+        ["production_title", config.production_title || defaultConfig.production_title],
+        ["production_description", config.production_description || defaultConfig.production_description],
+        ["contact_title", config.contact_title || defaultConfig.contact_title],
+        ["copyright_text", config.copyright_text || defaultConfig.copyright_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a05b137866d8198',t:'MTc2MzQ1MDI5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
